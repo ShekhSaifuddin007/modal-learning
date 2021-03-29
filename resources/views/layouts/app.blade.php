@@ -15,6 +15,9 @@
         body {
             font-family: 'Nunito', sans-serif;
         }
+        [x-cloak] {
+            display: none !important;
+        }
     </style>
     <livewire:styles/>
 
