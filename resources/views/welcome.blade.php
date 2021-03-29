@@ -34,23 +34,18 @@
 
     {{-- Modal --}}
 
-    <div>
-        <div class="bg-gray-900 opacity-80 fixed inset-0"></div>
-        <div class="bg-white p-4 max-w-sm shadow-md h-48 m-auto rounded-md fixed inset-0">
-            <div class="flex h-full flex-col justify-between">
-                <header class="text-lg font-bold">
-                    Are You Sure.?
-                </header>
+    <x-confirmation-modal>
+        <x-slot name="title">
+            Are You Sure.?
+        </x-slot>
 
-                <main>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, non.
-                </main>
+        <x-slot name="body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, mollitia?
+        </x-slot>
 
-                <footer>
-                    <button class="bg-gray-400 duration-200 hover:bg-gray-500 px-4 py-2 rounded-md text-white transition uppercase mr-2">Cancel</button>
-                    <button class="bg-blue-400 duration-200 hover:bg-blue-500 px-4 py-2 rounded-md text-white transition uppercase">Continue</button>
-                </footer>
-            </div>
-        </div>
-    </div>
+        <x-slot name="footer">
+            <x-button class="bg-gray-400 hover:bg-gray-500">Cancel</x-button>
+            <x-button class="bg-blue-400 hover:bg-blue-500">Continue</x-button>
+        </x-slot>
+    </x-confirmation-modal>
 </x-app-layout>

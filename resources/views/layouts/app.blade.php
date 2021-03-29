@@ -11,13 +11,14 @@
 
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
-
     <style>
         body {
             font-family: 'Nunito', sans-serif;
         }
     </style>
     <livewire:styles/>
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
 </head>
 <body class="antialiased bg-gray-200">
 <div class="relative flex items-top sm:items-center py-4 sm:pt-0">
